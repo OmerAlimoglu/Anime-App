@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(0.25turn, rgb(16, 236, 97), rgba(255,255,255, 0.2), rgb(16, 236, 97));
+}
+
+.search-box {
+    height: 25vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    color: rgb(243, 77, 11);
+}
+
+.search-box input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    margin-left: 5vh;
+    width: 50vh;
+    
+}
