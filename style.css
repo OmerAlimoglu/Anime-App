@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.75)), url(roronoa-zoro.jpg);    
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100vh, 100vh, cover;
+    background-attachment: fixed;    
+    font-family:'Lato', sans-serif;
+}
+
+.search-box {
+    height: 50vh;
+    width: auto;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;    
+    color: rgb(245, 225, 7);
+}
+
+h1 {    
+    text-align: center; 
+    color: rgb(245, 225, 7);
+}
+
+.search-box input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    margin-left: 5vh;
+    width: 50vh;    
+}
+
