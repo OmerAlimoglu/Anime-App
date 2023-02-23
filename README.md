@@ -5,6 +5,8 @@
 ## Description
 
 In this project I'm using https://api.jikan.moe/v4/anime to fetch anime data.
+I want to create a single page app for anyone who want to watch anime.
+Just search bar will give you the chance to reach a rich content...
 
 [full description will be added later]
 
