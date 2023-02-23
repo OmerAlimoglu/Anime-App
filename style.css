@@ -1,16 +1,19 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;  
+      
 }
 
-body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.75)), url(roronoa-zoro.jpg);    
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 100vh, 100vh, cover;
-    background-attachment: fixed;    
+body {        
     font-family:'Lato', sans-serif;
+    background-image: url(roronoa-zoro.jpg);    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    max-width: 100%;
+    height: 100vh;   
 }
 
 .search-box {
@@ -25,7 +28,8 @@ body {
 
 h1 {    
     text-align: center; 
-    color: rgb(245, 225, 7);
+    color: rgb(2, 103, 19);
+    opacity: 1;
 }
 
 .search-box input {
@@ -37,3 +41,20 @@ h1 {
     width: 50vh;    
 }
 
+.anime-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-auto-flow: dense;
+    
+}
+
+.anime-div li {
+    list-style: none;
+    color: white;
+    text-align: center;
+}
+
+.anime-div img {
+    opacity: .8;
+}
