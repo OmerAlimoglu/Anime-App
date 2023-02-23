@@ -5,18 +5,27 @@
 }
 
 body {
-    background: linear-gradient(0.25turn, rgb(16, 236, 97), rgba(255,255,255, 0.2), rgb(16, 236, 97));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.75)), url(roronoa-zoro.jpg);    
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100vh, 100vh, cover;
+    background-attachment: fixed;    
+    font-family:'Lato', sans-serif;
 }
 
 .search-box {
-    height: 25vh;
-    width: auto;
+    height: 50vh;
+    width: auto;    
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    font-family: sans-serif;
-    color: rgb(243, 77, 11);
+    align-items: center;    
+    color: rgb(245, 225, 7);
+}
+
+h1 {    
+    text-align: center; 
+    color: rgb(245, 225, 7);
 }
 
 .search-box input {
@@ -25,6 +34,6 @@ body {
     border-left-style: hidden;
     border-bottom-style: groove;
     margin-left: 5vh;
-    width: 50vh;
-    
+    width: 50vh;    
 }
+
