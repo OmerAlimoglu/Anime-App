@@ -20,13 +20,12 @@ root
     
     
 └── src
-    └── app.js    
-    └── data.js
-    └── pages
-        └── favouritesPage.js
-        └── initPage.js
+    └── main.js        
+    └── page
+    └── view       
+        
 └── index.html
-(I am not sure about the structure. Organize it properly later.)
+(The structure has not organized well yet. Improve it later.)
 ```
 ## The project features
 
