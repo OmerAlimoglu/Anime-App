@@ -16,6 +16,7 @@ Just search bar will give you the chance to reach a rich content...
 root
 └── public
     └── style.css
+    └── img
     
     
 └── src
