@@ -7,19 +7,17 @@ async function fetchData() {
   return await response.json();
 }
 
+const animeDisplayElement = document.getElementsByClassName("anime-display")[0];
+const animeDivElement = document.createElement("div");
+animeDivElement.classList.add("anime-div");
+animeDisplayElement.appendChild(animeDivElement);
+
 function displayData() {
-  const animeDisplayElement =
-    document.getElementsByClassName("anime-display")[0];
   fetchData()
     .then((data) => {
       const animeList = data.data;
-      const animeGridElement = document.createElement("div");
-      animeGridElement.classList.add("anime-grid");
       animeList.map((anime) => {
         console.log(anime);
-        const animeDivElement = document.createElement("div");
-        animeDivElement.classList.add("anime-div");
-        document.body.appendChild(animeDivElement);
         const animeName = anime.title_english;
         if (anime.title_english === null) return anime.title;
         console.log(animeName);
@@ -27,9 +25,7 @@ function displayData() {
         console.log(animeImage);
         const animeList = `<li><img src="${animeImage}" alt="${animeName} poster"> <h2>${animeName}</h2> </li>`;
         animeDivElement.innerHTML += animeList;
-        animeGridElement.appendChild(animeDivElement);
       });
-      animeDisplayElement.appendChild(animeGridElement);
     })
     .catch((error) => console.log(error));
 }
