@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="./public/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Merriweather:wght@400;700&family=Montserrat&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,500&display=swap"
       rel="stylesheet"
     />
     <title>Anime Search App</title>
@@ -16,15 +18,15 @@
   <body>
     <h1>Anime Heaven</h1>
     <div class="search-box">
-      <form>
-        <input
-          id="search-input"
-          placeholder="enter anime name...eg Naruto"
-          type="text"
-        />
-        <label for="search">Search</label>
-      </form>
+      <label for="search">Search</label>
+      <input
+        id="search-input"
+        placeholder="enter anime name...eg Naruto"
+        type="text"
+      />
+      <div class="search-results"></div>
     </div>
+
     <div class="anime-display"></div>
     <script src="./src/app.js" type="module"></script>
   </body>
