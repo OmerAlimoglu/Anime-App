@@ -1,8 +1,10 @@
 import { initializeAnimeDisplay } from "./displayAnime.js";
 import { searchQuery } from "./searchQuery.js";
+//import { renderResults } from "./page/searchResultPage.js";
 
 window.onload = () => {
   initializeAnimeDisplay();
+  //renderResults();
 
   const searchFieldElement = document.getElementById("search-input");
   searchFieldElement.onkeyup = (event) => {

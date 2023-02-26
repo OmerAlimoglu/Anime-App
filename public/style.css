@@ -6,7 +6,7 @@
 }
 
 body {        
-    font-family:'Lato', sans-serif;
+    font-family: 'Noto Sans', sans-serif;    
     background-image: url(roronoa-zoro.jpg);    
     background-position: center;
     background-repeat: no-repeat;
@@ -17,19 +17,22 @@ body {
 }
 
 .search-box {
-    height: 50vh;
-    width: auto;    
+    position: relative;
+    height: auto;
+    width: auto;
+    margin-right: 12px;    
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;    
-    color: rgb(245, 225, 7);
+    justify-content:center;
+    align-items:flex-end;    
+    color: rgb(13, 210, 46);    
 }
 
 h1 {    
-    text-align: center; 
-    color: rgb(2, 103, 19);
-    opacity: 1;
+    text-align:right;
+    font-size: 28px;     
+    color: rgb(13, 210, 46);
+    margin-right: 12px;    
 }
 
 .search-box input {
@@ -38,10 +41,62 @@ h1 {
     border-left-style: hidden;
     border-bottom-style: groove;
     margin-left: 5vh;
-    width: 50vh;    
+    width: 80vh;     
+    border-radius: 5px;  
+    background: rgba(214, 214, 214, .8); 
+}
+
+.search-results {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;    
+    width: 80vh;
+    height: 13rem;    
+    margin-top: 16rem;
+    border-radius: 10px;
+    overflow: auto;
+    background: rgba(224, 224, 224, .3);
+}
+
+.search-result {
+    position: relative;
+    width: 80vh;
+    min-height: 2rem;    
+    border-radius: 10px;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    margin-bottom: 5px;
+    background: rgba(224, 224, 224, .7);
+}
+
+.search-results::-webkit-scrollbar {
+    display: none;
+}
+
+.search-result img {
+    width: 35px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.search-result .content {
+    width: 80%;
+    height: 80%;    
+    text-align:left;
+    margin-left: 5px;
+    font-size: 12px;    
+}
+
+.search-result::-webkit-scrollbar {
+    display: none;
 }
 
 .anime-div {
+    margin-top: 20rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;

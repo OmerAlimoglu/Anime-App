@@ -10,10 +10,21 @@ export function searchQuery(query) {
     .then((data) => {
       const animeList = data.data;
       const searchResults = animeList.map((anime) => {
-        return anime.title_english || anime.title;
+        const animeName = anime.title_english || anime.title;
+        const animeImage = anime.images.jpg.image_url;
+        return { name: animeName, image: animeImage };
       });
       console.log(searchResults);
-      // Display search results in the UI
+      let searchResultsElement =
+        document.getElementsByClassName("search-results")[0];
+      searchResults.forEach((anime) => {
+        let searchResultElement = document.createElement("div");
+        searchResultElement.classList.add("search-result");
+        searchResultElement.innerHTML = `
+        <img src="${anime.image}" alt="anime image"/>
+        <div class="content">${anime.name}</div>`;
+        searchResultsElement.appendChild(searchResultElement);
+      });
     })
     .catch((error) => {
       console.log(error);
