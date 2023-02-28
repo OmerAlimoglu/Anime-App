@@ -1,9 +1,9 @@
-//import { initializeAnimeDisplay } from "./displayAnime.js";
+import { initializeAnimeDisplay } from "./displayAnime.js";
 import { initializeGenreDisplay } from "./displayGenres.js";
 import { searchQuery } from "./searchQuery.js";
 
 window.onload = () => {
-  //initializeAnimeDisplay();
+  initializeAnimeDisplay();
   initializeGenreDisplay();
 };
 
