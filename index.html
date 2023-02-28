@@ -12,18 +12,25 @@
     <title>Anime Search App</title>
   </head>
   <body>
+    <span id="error"></span>
     <h1>Anime Heaven</h1>
     <div class="header">
       <div class="search-box">
-        <input id="search-input" placeholder="Search..." type="text" />
+        <input
+          id="search-input"
+          placeholder="Search..."
+          type="text"
+          autocomplete="off"
+        />
         <div class="search-results"></div>
       </div>
       <div class="genre-dropdown">
         <button class="genre-button">Genres</button>
-        <div id="genre-list" class="genre-list hidden"></div>
+        <div class="genre-list hidden"></div>
       </div>
     </div>
-    <!-- <div class="anime-div"></div> -->
+
+    <div class="search-anime-div"></div>
     <script src="./src/app.js" type="module"></script>
   </body>
 </html>
