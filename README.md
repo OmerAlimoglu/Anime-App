@@ -1,6 +1,6 @@
 # Anime Search App
 
-[You can try it here](I'll add the link later.)
+You can try it here: https://omeralimoglu.github.io/Anime-App/
 
 ## Description
 
@@ -16,20 +16,26 @@ Just search bar will give you the chance to reach a rich content...
 root
 └── public
     └── style.css
-    └── img
-    
+        
     
 └── src
-    └── main.js        
+    └── app.js
+    └── displayAnime.js
+    └── displayGenres.js
+    └── fetchData.js
+    └── searchQuery.js
     └── page
+        └── searchResultPage.js
     └── view       
         
 └── index.html
-(The structure has not organized well yet. Improve it later.)
+
 ```
 ## The project features
 
-- search and display the list of animes
+* Displays the top rated animes.
+* Search anime.
+* Get the anime list of a specific genre.
  
 
 ## Must_haves 
