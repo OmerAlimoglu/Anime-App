@@ -5,7 +5,7 @@ You can try it here: https://omeralimoglu.github.io/Anime-App/
 ## Description
 
 In this project I'm using https://api.jikan.moe/v4/anime to fetch anime data.<br>
-I want to create a single page app for anyone who want to watch anime.<br>
+I want to create a single page app for anyone who want to search anime.<br>
 Just search bar will give you the chance to reach a rich content...
 
 [full description will be added later]
@@ -47,4 +47,5 @@ root
 * Display the results as a list of images and names of the anime.<br>
 * On the anime detail page, include a link to related manga by using the Jikan API's manga endpoint to retrieve a list of manga related to the selected anime. Display the results as a list of images and names of the manga.<br>
 * Also on the anime detail page, include a link to related anime in the same genre by using the Jikan API's genre endpoint to retrieve a list of anime in the same genre as the selected anime. Display the results as a list of images and names of the related anime.<br>
-* A fovourite anime list
+* A fovourite anime list.
+* A link for anime videos.
